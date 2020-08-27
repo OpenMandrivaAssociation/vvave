@@ -34,6 +34,7 @@ BuildRequires:  cmake(KF5Config)
 BuildRequires:  cmake(KF5)
 BuildRequires:  cmake(Taglib)
 BuildRequires:	pkgconfig(taglib)
+BuildRequires:	cmake(MauiKit)
 
 %description
 Vvave will handle your whole music collection
