@@ -2,7 +2,7 @@
 
 Name:		vvave
 Summary:	Vvave Media Player
-Version:	1.2.1
+Version:	2.1.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
