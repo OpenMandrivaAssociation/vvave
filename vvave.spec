@@ -1,9 +1,7 @@
-#define snapshot 20200827
-
 Name:		vvave
 Summary:	Vvave Media Player
 Version:	2.1.0
-Release:	%{?snapshot:0.%{snapshot}.}1
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://vvave.kde.org/
@@ -39,6 +37,13 @@ BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(Taglib)
 BuildRequires:	pkgconfig(taglib)
 BuildRequires:	cmake(MauiKit)
+BuildRequires:  cmake(MauiKitAccounts)
+
+Requires: gstreamer1.0-plugins-base
+Requires: gstreamer1.0-plugins-good
+Requires: gstreamer1.0-plugins-bad
+Requires: gstreamer1.0-plugins-ugly
+Requires: gstreamer1.0-libav
 
 %description
 Vvave will handle your whole music collection
