@@ -40,6 +40,7 @@ BuildRequires:	cmake(Taglib)
 BuildRequires:	pkgconfig(taglib)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  cmake(MauiKitAccounts)
+BuildRequires:	cmake(MauiKitFileBrowsing)
 
 Requires: gstreamer1.0-plugins-base
 Requires: gstreamer1.0-plugins-good
