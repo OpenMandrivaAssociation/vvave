@@ -1,11 +1,13 @@
+%define snapshot 20220107
+
 Name:		vvave
 Summary:	Vvave Media Player
-Version:	2.1.0
-Release:	1
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://vvave.kde.org/
-Source0:	https://invent.kde.org/maui/vvave/-/archive/master/%{name}-v%{version}.tar.bz2
+Source0:	https://invent.kde.org/maui/vvave/-/archive/%{?snapshot:master/vvave-master.tar.bz2#/vvave-%{snapshot}.tar.bz2}%{!?snapshot:v%{version}/vvave-v%{version}.tar.bz2}
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5DBus)
@@ -52,7 +54,7 @@ by retreaving semantic information from the web.
 Just relax, enjoy and discover your new music 
 
 %prep
-%autosetup -n %{name}-v%{version} -p1
+%autosetup -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}} -p1
 %cmake_kde5
 
 %build
