@@ -1,8 +1,8 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
 Name:		vvave
 Summary:	Vvave Media Player
-Version:	2.1.1
+Version:	2.2.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -31,6 +31,7 @@ BuildRequires:	cmake(Qt5)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(Gettext)
 BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5)
 BuildRequires:	cmake(KF5Attica)
