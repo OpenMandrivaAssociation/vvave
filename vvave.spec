@@ -65,7 +65,9 @@ Just relax, enjoy and discover your new music
 %install
 %ninja_install -C build
 
-%files
+%find_lang vvave
+
+%files -f vvave.lang
 %doc README.md
 %{_bindir}/%{name}
 %{_iconsdir}/hicolor/*/apps/*.svg
