@@ -2,7 +2,7 @@
 
 Name:		vvave
 Summary:	Vvave Media Player
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -39,9 +39,9 @@ BuildRequires:	cmake(KF5SyntaxHighlighting)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(Taglib)
 BuildRequires:	pkgconfig(taglib)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitAccounts)
-BuildRequires:	cmake(MauiKitFileBrowsing)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitAccounts3)
+BuildRequires:	cmake(MauiKitFileBrowsing3)
 
 Requires: gstreamer1.0-plugins-base
 Requires: gstreamer1.0-plugins-good
