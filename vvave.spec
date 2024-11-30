@@ -8,6 +8,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://vvave.kde.org/
 Source0:	https://invent.kde.org/maui/vvave/-/archive/%{?snapshot:master/vvave-master.tar.bz2#/vvave-%{snapshot}.tar.bz2}%{!?snapshot:v%{version}/vvave-v%{version}.tar.bz2}
+Patch0:   https://invent.kde.org/maui/vvave/-/merge_requests/25.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6DBus)
